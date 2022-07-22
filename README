@@ -1,0 +1,39 @@
+Project Statement #7) Implement a doctor-patient appointment system
+
+System consists of python files, databases and sql files
+
+Installation & Initial Setup:
+
+  The system uses many modules (via import statements), most of which already exist inside of the standard library, and do not need to be installed.
+  However, the names module does not exist in the standard library and will need to be installed by the user.
+  Open a terminal, and execute the following command. Ensure the installed module exists in the same direc as the system files
+
+  pip3 install names
+
+
+Using the system:
+
+  To use the system, run the driver python file, using the following command
+  python3 Driver.py
+  
+  The system uses string matching to validate all inputs. As such, ensure all spelling is correct
+  
+  Format for entering a illness: 
+    The first letter of the illness must be capital, all remaining words/letters must be lowercase
+    
+     At this time, a limited number of illnesses are supported by the system.
+     For now the system is limited to a set of illnesses, given below in the following format "illness" : "Category"
+     When prompted for an illness by the system, enter one of the following illnesses as given below (ex: Arrhythmia or Celiac disease)
+
+    "Arrhythmia" : "Cardiology", "Coronary artery disease" : "Cardiology", "Cardiomyopathy" : "Cardiology", "Pericardial disease" :"Cardiology", "Heart Value disease" : "Cardiology",
+    "Asthma" : "Respiratory", "Covid-19" : "Respiratory", "Pneumonia" : "Respiratory", "Cystic Fibrosis" : "Respiratory", "Lung Cancer" : "Respiratory" 
+    "Celiac disease" : "Gastro", "IBS" : "Gastro", "Diarrhea" : "Gastro", "Crohns disease" : "Gastro", "Gallstones" : "Gastro", "Acid Reflux" : "Gastro", "Constipation" : "Gastro",
+    "Arthritis" : "Orthopaedics", "Carpal Tunnel Syndrome" : "Orthopaedics", "Torn Meniscus" : "Orthopaedics",  "Osteoporosis" : "Orthopaedics", "Scoliosis" : "Orthopaedics", "Medial Epicondylitis" : "Orthopaedics", "Low Back Pain" : "Orthopaedics",
+    "Headaches" : "Neurology", "Epilepsy" : "Neurology", "Seizures" : "Neurology", "Stroke" : "Neurology", "ALS" : "Neurology", "Alzheimers" : "Neurology", "Dementia" : "Neurology",
+    "Panic disorder" : "Psychiatry", "OCD" : "Psychiatry", "Depression" : "Psychiatry", "Bipolar disorder" : "Psychiatry", "Post-traumatic stress disorder" : "Psychiatry", "Schizophrenia" : "Psychiatry",
+    "Acne" : "Dermatology", "Pemphigus" : "Dermatology", "Psoriasis" : "Dermatology", "Rosacea" : "Dermatology", "Scleroderma" : "Dermatology",
+    "Diabetes" : "Endocrinology", "Hypothyroidism" : "Endocrinology", "PCOS" : "Endocrinology", "Crushing's Syndrome" : "Endocrinology", "Acromegaly" : "Endocrinology",
+    "Erectile Dysfunction" : "Urology", "Prostatis" : "Urology", "Kidney Stone" : "Urology", "Prostate cancer" : "Urology", "Stomas" : "Urology", "Testicular cancer" : "Urology", "Urinary Tract Infection" : "Urology", "UTI" : "Urology",
+    "Spinal stenosis" : "Neurosurgery", "Spondyolisthesis" : "Neurosurgery", "Cauda equina syndrome" : "Neurosurgery", "Chiari malformations" : "Neurosurgery",
+    "Typhus" : "Infectious Disease", "Typhoid" : "Infectious Disease", "Tetanus" : "Infectious Disease", "Syphillis" : "Infectious Disease", "Mumps" : "Infectious Disease", "Lyme disease" : "Infectious Disease", "Malaria" : "Infectious Disease", "COVID-19" : "Infectious Disease", "Hepatitis A" : "Infectious Disease", "Hepatitis B" : "Infectious Disease", "Hepatitis C" : "Infectious Disease"
+
